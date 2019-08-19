@@ -8,8 +8,11 @@
 
 </head>
 <body>
-    <span class="message">{{ message  }}</span>
-        {{ content }}
+    
+    {% extends "layout.html" %}
+    {% block content %}
+    <span class="message">{{ message }}</span>{{ content }}
+    {% endblock %}
     <br />
     <a href="about">About</a>
 </body>

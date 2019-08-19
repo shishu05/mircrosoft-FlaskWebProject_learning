@@ -8,7 +8,9 @@
 
 </head>
 <body>
-    <div> <a href="home">Home</a> </div>
-{{ content }}
+    {% extends "layout.html" %}
+    {% block content %}
+    {{ content }}
+    {% endblock %}
 </body>
 </html>

@@ -5,7 +5,7 @@ from HelloFlask import app
 
 @app.route('/')
 @app.route('/home')
-@app.route('/api/data')
+#@app.route('/api/data')
 
 
 def home():
