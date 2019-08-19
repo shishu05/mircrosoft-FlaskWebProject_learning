@@ -5,6 +5,8 @@ from HelloFlask import app
 
 @app.route('/')
 @app.route('/home')
+@app.route('/api/data')
+
 
 def home():
     now =datetime.now()
@@ -17,4 +19,10 @@ def home():
                            title="Hello Flask",
                            message = "Hello, Shishu",
                            content =" on " + formatted_now)
-#"Hello Shishu"
+@app.route('/about')
+
+def about():
+    return render_template("about.html",
+                           title=" About Shishu Flask",
+                           content="Example of app for flask app")
+
